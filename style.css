@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  justify-content: center;
+  /* TODO change colour */
+  background-color: whitesmoke;
+  font-size: 1.1em;
+}
+
+article {
+  padding: 1.5em;
+  max-width: 50rem;
+}
