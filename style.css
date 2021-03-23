@@ -3,15 +3,57 @@
   src: url(amogus.ttf);
 }
 
+:root {
+  --blue: #0e215d;
+}
+
 body {
   --mainFont: Verdana, Geneva, Tahoma, sans-serif;
 
-  display: grid;
-  justify-content: center;
-  /* TODO change colour */
+  margin: 0;
   background-color: whitesmoke;
   font-size: 1.1em;
   font-family: var(--mainFont);
+}
+
+header {
+  width: 100%;
+  background-color: white;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+header img {
+  width: 60%;
+  max-width: 20em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.7em 0;
+  background-color: var(--blue);
+}
+
+nav a {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+main {
+  display: grid;
+  justify-content: center;
 }
 
 article {
@@ -45,4 +87,8 @@ h1 {
 
 #github {
   text-align: center;
+}
+
+footer {
+  background-color: var(--blue);
 }
