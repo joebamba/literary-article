@@ -21,7 +21,7 @@ header {
   background-color: white;
 }
 
-header > div {
+header > div > a {
   display: flex;
   justify-content: center;
   padding: 2em 0;
@@ -39,7 +39,8 @@ nav {
   background-color: var(--blue);
 }
 
-nav a {
+nav a,
+footer a {
   all: unset;
   color: white;
   cursor: pointer;
@@ -47,7 +48,8 @@ nav a {
   font-size: 0.9em;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
   color: #007bff;
 }
 
@@ -85,10 +87,42 @@ h1 {
   color: royalblue;
 }
 
-#github {
-  text-align: center;
-}
-
 footer {
   background-color: var(--blue);
+  padding: 4em 6em 1.5em 6em;
+  color: white;
+}
+
+footer > * {
+  display: block;
+}
+
+footer > div {
+  margin-top: 0.8em;
+}
+
+footer > img {
+  width: 50%;
+  max-width: 15em;
+  margin-bottom: 1.8em;
+}
+
+footer hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+small {
+  font-size: 0.6em;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.m {
+  margin-bottom: 1em;
 }
